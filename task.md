@@ -17,11 +17,11 @@ Esta lista de tareas se basa en el `plan.md` y nos ayuda a rastrear qué partes 
   - [x] Vincular los inputs a los estados (`value` y `onChange`).
   - [x] Crear la función `handleSubmit`.
 
-- [ ] **Paso 4: Modularización y Abstracción de la Lógica**
-  - [ ] Crear el componente reutilizable `DateInput.tsx`.
-  - [ ] Crear el componente `ResultDisplay.tsx`.
-  - [ ] Separar las funciones de validación en `src/utils/validation.ts`.
-  - [ ] Separar la lógica de cálculo en `src/utils/ageCalculator.ts`.
+- [x] **Paso 4: Modularización y Abstracción de la Lógica**
+  - [x] Crear el componente reutilizable `DateInput.tsx`.
+  - [x] Crear el componente `ResultDisplay.tsx`.
+  - [x] Separar las funciones de validación en `src/utils/validation.ts`.
+  - [x] Separar la lógica de cálculo en `src/utils/ageCalculator.ts`.
 
 - [ ] **Paso 5: Implementación de la Validación y el Cálculo**
   - [ ] Integrar la lógica de validación en `handleSubmit`.
