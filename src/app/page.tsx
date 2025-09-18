@@ -1,103 +1,83 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <main className="bg-gray-200 min-h-screen flex items-center justify-center p-4">
+      <div className="bg-white p-8 sm:p-12 rounded-3xl rounded-br-[120px] shadow-xl w-full max-w-2xl">
+        <form>
+          {/* Contenedor de Inputs */}
+          <div className="flex gap-4 sm:gap-8">
+            {/* Input del Día */}
+            <div className="flex flex-col w-1/4">
+              <label htmlFor="day" className="text-gray-500 font-bold tracking-[0.2em] text-xs mb-2">
+                DIA
+              </label>
+              <input
+                id="day"
+                type="number"
+                placeholder="DD"
+                className="border border-gray-300 rounded-lg p-3 text-gray-900 text-xl sm:text-3xl font-bold focus:outline-none focus:ring-2 focus:ring-purple-600"
+              />
+            </div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+            {/* Input del Mes */}
+            <div className="flex flex-col w-1/4">
+              <label htmlFor="month" className="text-gray-500 font-bold tracking-[0.2em] text-xs mb-2">
+                MES
+              </label>
+              <input
+                id="month"
+                type="number"
+                placeholder="MM"
+                className="border border-gray-300 rounded-lg p-3 text-gray-900 text-xl sm:text-3xl font-bold focus:outline-none focus:ring-2 focus:ring-purple-600"
+              />
+            </div>
+
+            {/* Input del Año */}
+            <div className="flex flex-col w-1/4">
+              <label htmlFor="year" className="text-gray-500 font-bold tracking-[0.2em] text-xs mb-2">
+                AÑO
+              </label>
+              <input
+                id="year"
+                type="number"
+                placeholder="YYYY"
+                className="border border-gray-300 rounded-lg p-3 text-gray-900 text-xl sm:text-3xl font-bold focus:outline-none focus:ring-2 focus:ring-purple-600"
+              />
+            </div>
+          </div>
+
+          {/* Separador y Botón de Envío */}
+          <div className="mt-8 flex items-center relative">
+            <hr className="w-full border-t border-gray-300" />
+            <button
+              type="submit"
+              className="bg-purple-600 hover:bg-black rounded-full p-4 sm:p-5 absolute right-0 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-4"
+              aria-label="Calculate age"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 46 44">
+                <g fill="none" stroke="#FFF" strokeWidth="2">
+                  <path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/>
+                </g>
+              </svg>
+            </button>
+          </div>
+        </form>
+
+        {/* Sección de Resultados */}
+        <div className="mt-12">
+          <p className="text-6xl sm:text-8xl font-extrabold italic">
+            <span className="text-purple-600">--</span> 
+            <span className="text-gray-900"> años </span>
+          </p>
+          <p className="text-6xl sm:text-8xl font-extrabold italic">
+            <span className="text-purple-600">--</span>
+            <span className="text-gray-900"> meses </span>
+          </p>
+          <p className="text-6xl sm:text-8xl font-extrabold italic">
+            <span className="text-purple-600">--</span>
+            <span className="text-gray-900"> dias </span>
+          </p>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </div>
+    </main>
   );
 }
