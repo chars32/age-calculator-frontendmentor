@@ -10,12 +10,12 @@ Esta lista de tareas se basa en el `plan.md` y nos ayuda a rastrear qué partes 
   - [x] Estructurar el contenido con HTML semántico en `page.tsx`.
   - [x] Aplicar estilos con TailwindCSS para replicar el diseño visual.
 
-- [ ] **Paso 3: Lógica y Manejo del Estado con React**
-  - [ ] Crear estados para las entradas del usuario (día, mes, año).
-  - [ ] Crear estado para el resultado del cálculo.
-  - [ ] Crear estado para los errores de validación.
-  - [ ] Vincular los inputs a los estados (`value` y `onChange`).
-  - [ ] Crear la función `handleSubmit`.
+- [x] **Paso 3: Lógica y Manejo del Estado con React**
+  - [x] Crear estados para las entradas del usuario (día, mes, año).
+  - [x] Crear estado para el resultado del cálculo.
+  - [x] Crear estado para los errores de validación.
+  - [x] Vincular los inputs a los estados (`value` y `onChange`).
+  - [x] Crear la función `handleSubmit`.
 
 - [ ] **Paso 4: Modularización y Abstracción de la Lógica**
   - [ ] Crear el componente reutilizable `DateInput.tsx`.
