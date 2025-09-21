@@ -20,6 +20,11 @@ Este documento resume el progreso realizado en el proyecto hasta la fecha actual
     *   Se crearon componentes reutilizables: `DateInput.tsx` para los campos de fecha y `ResultDisplay.tsx` para mostrar el resultado.
     *   Se ha separado la estructura para la lógica de negocio en archivos dedicados: `src/utils/validation.ts` y `src/utils/ageCalculator.ts`.
 
+5.  **Implementación de la Lógica de Negocio (Paso 5 del plan):**
+    *   Se ha implementado una robusta lógica de validación en `src/utils/validation.ts` para manejar campos vacíos, fechas inválidas y fechas futuras.
+    *   Se ha desarrollado el algoritmo de cálculo de edad en `src/utils/ageCalculator.ts`, manejando correctamente los "préstamos" entre días, meses y años.
+    *   La aplicación ahora es completamente funcional y muestra los resultados o errores correspondientes.
+
 ## Próximos Pasos
 
-El siguiente objetivo es abordar el **Paso 5: Implementación de la Validación y el Cálculo**. Ahora que tenemos una estructura de código limpia y organizada, implementaremos la lógica real que hará que la calculadora funcione, maneje errores y muestre la edad correcta.
+El siguiente objetivo es abordar el **Paso 6: Bonus - Animación de los Números**. Ahora que nuestra calculadora es funcional, le añadiremos un toque de elegancia y dinamismo animando los números del resultado para que cambien de forma fluida.

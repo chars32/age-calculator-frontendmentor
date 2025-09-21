@@ -23,10 +23,10 @@ Esta lista de tareas se basa en el `plan.md` y nos ayuda a rastrear qué partes 
   - [x] Separar las funciones de validación en `src/utils/validation.ts`.
   - [x] Separar la lógica de cálculo en `src/utils/ageCalculator.ts`.
 
-- [ ] **Paso 5: Implementación de la Validación y el Cálculo**
-  - [ ] Integrar la lógica de validación en `handleSubmit`.
-  - [ ] Integrar la lógica de cálculo en `handleSubmit`.
-  - [ ] Mostrar los resultados o errores en la interfaz.
+- [x] **Paso 5: Implementación de la Validación y el Cálculo**
+  - [x] Integrar la lógica de validación en `handleSubmit`.
+  - [x] Integrar la lógica de cálculo en `handleSubmit`.
+  - [x] Mostrar los resultados o errores en la interfaz.
 
 - [ ] **Paso 6: Bonus - Animación de los Números**
   - [ ] Instalar y configurar una librería de animación (ej. Framer Motion).
